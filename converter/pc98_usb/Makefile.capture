@@ -1,5 +1,5 @@
-TARGET = pc98_capture
-MCU = atmega32u2
+TARGET = pc98_capture_$(MCU)
+MCU ?= atmega32u2
 
 SRC ?=	protocol/serial_uart.c \
 	matrix.c \
